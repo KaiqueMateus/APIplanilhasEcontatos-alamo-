@@ -1,0 +1,32 @@
+<div class="table-responsive" id="table-responsiva">
+    <div id="tr_p-table">
+  
+        <p id="p-table">Cadastros pendentes</p>
+   
+    </div>
+
+  <div id="container-table">
+    <table class="table" id="tabela">
+        <thead>
+            <tr>
+                <% rowsData[0].forEach(header => { %>
+                    <th><%= header %></th>
+                <% }); %>
+            </tr>
+        </thead>
+        <tbody>
+            <% for (let i = 1; i < rowsData.length; i++) { %>
+                <tr>
+                    <% rowsData[i].forEach(cell => { %>
+                        <td><%= cell %></td>
+                    <% }); %>
+                </tr>
+            <% } %>
+        </tbody>
+    </table>
+  </div>
+
+  <div id="tr_p-table">
+    
+  </div>
+</div>

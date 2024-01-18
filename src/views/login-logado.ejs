@@ -1,0 +1,31 @@
+<!-- login-logado.ejs -->
+<%- include('includes/head') %>
+
+<section class="container">
+    <div class="row">
+        <div class="col-lg-2"></div>
+
+        <div class="col-lg-8 my-5">
+            <h2 class="text-center" id="main-title">Olá, <%= user.email %>!</h2> 
+            <p id="p-title">Aqui você ficará por dentro das estatísticas do cadastro!</p>
+            <%- include('includes/messagens') %>
+            <% if (rowsData && rowsData.length > 0) { %>
+                <!-- Inclusão da Tabela -->
+                <%- include('includes/table') %>
+            <% } else { %>
+                <p>Nenhum dado disponível.</p>
+            <% } %>
+            <br>
+            <div class="card-body">
+                <button type="button" class="btn btn-primary" id="btn-prin">ATUALIZAR</button>
+            </div>
+        </div>
+        
+        
+        <div class="col-lg-2"></div>
+    </div>
+   
+</section>
+<script src="/src/utils/logicaSheets.js"></script>
+
+<%- include('includes/footer') %>

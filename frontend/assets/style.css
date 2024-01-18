@@ -1,0 +1,167 @@
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+
+#nav-bar {
+    background-image: linear-gradient(to left, #e5381e ,#ee781f );
+    font-weight: 500;
+}
+
+h1 {
+    color: black;
+}
+
+p {
+    text-align: center;
+}
+
+.navbar-brand {
+    padding: 20px;
+    color: #eb0808;
+}
+
+.navbar-brand:hover {
+    color: #1f3c8e;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+#logo {
+    width: 120px;
+}
+
+#btn-prin {
+    border-radius: 25px;
+    width: 150px;
+    background-color: #1F3C8E;
+    border: 0;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+ 
+#main-title {
+    color: #1F3C8E;
+    font-size: 32px;
+    text-align: center;
+    font-weight: 700;
+}
+
+#p-title {
+    font-weight: bold;
+    color: #EE781F;
+    padding-bottom: 10px;
+}
+
+.card-body {
+    display: flex;
+    justify-content: center;
+}
+
+#tr_p-table {
+    background-image: linear-gradient(to left, #e5381e ,#ee781f );
+    width: 100%;
+    height: 8vh;
+    line-height: 2.5;
+}
+
+#p-table {
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#container-table {
+    background-color: rgb(192, 194, 218);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#tabela {
+    border-radius: 10px;
+    width: 820px;
+    display: block;
+    margin: 0 auto; /* Centraliza horizontalmente */
+    margin-left: 30px;
+}
+
+th {
+    background-color: #1f3c8e;
+    width: 320px;
+    color: #fff;
+}
+
+#th-alterações {
+    width: 500px;
+}
+
+#excluir-link {
+    color: red;
+}
+
+tr {
+    background-color: var(--white);
+    color: #1f3c8e;
+    font-weight: 600;
+    width: 460px;
+    border-radius: 10px;
+}
+
+td, th {
+    border-right: 1px solid white;
+}
+
+#table-responsiva {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#table-responsiva {
+    display: block;
+    margin: 0 auto; /* Centraliza horizontalmente */
+    margin-left: -130px;
+    width: 880px;
+    border-radius: 10px;
+}
+
+.nav-p {
+    color: white;
+}
+
+body{
+    overflow: auto;
+}

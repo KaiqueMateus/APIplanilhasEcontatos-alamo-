@@ -1,0 +1,60 @@
+<%- include('includes/head') %>
+
+<section class="container">
+    <div class="row">
+        <div class="col-lg-2"></div>
+
+        <div class="col-lg-8 my-4">
+            <% if (user) { %> <!-- Verifica se o usuário está autenticado -->
+                <h1 class="text-center">Bem vindo!</h1>
+                <p class="text-center">Aqui você ficará por dentro dos dados de cadastro da Álamo!</p>
+                <%- include('includes/messagens') %>
+
+                <% if(contatos.length > 0)  { %>
+                <div class="table-responsive" id="table-responsiva">
+                    <div id="tr_p-table">
+                        <p id="p-table">Contatos</p>
+                </div>
+                    <div id="container-table">
+                        <table class="table" id="tabela">
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Sobrenome</th>
+                                <th>Email</th>
+                                <th id="th_alterações">Alterações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <% contatos.forEach(contato => { %>
+                                <tr>
+                                    <td><%= contato.nome %></td>
+                                    <td><%= contato.sobrenome %></td>
+                                    <td><%= contato.email %></td>
+                                    <td><a href="/contato/index/<%= contato._id %>">Editar</a>
+                                        <br>
+                                        <a id="excluir-link" href="/contato/delete/<%= contato._id %>">Excluir</a>
+                                    </td>
+                                </tr>
+                            <% }); %>
+                        </tbody>
+                        </table>
+                    </div>
+                </div>
+                   
+                <% } else { %>
+                    <p class="text-center lead">Não existem contatos na sua agenda</p>
+                <% } %>
+            <% } else { %>
+                <h1 class="text-center">Bem vindo!</h1>
+                <p class="text-center">Aqui você ficará por dentro dos dados de cadastro da Álamo!</p>
+                <p class="text-center lead">Você precisa estar logado para acessar a lista de contatos.</p>
+           
+            <% } %>
+        </div>
+
+        <div class="col-lg-2"></div>
+    </div>
+</section>
+
+<%- include('includes/footer') %>
